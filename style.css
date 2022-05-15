@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, input, button, #tweakers label {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0 0;
+}
+
+#app {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+
+    width: 280px;
+    background-color: #e5e5e5;
+    padding: 100px 50px;
+}
+
+#tweakers {
+    text-align: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.range-tweaker {
+    width: 100%;
+}
+
+#file-input {
+    display: none;
+}
+
+.section-button {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+#upload-label {
+    background-color: #000000;
+}
+
+#save-button {
+    background-color: #8d99ae;
+    color: black;
+    margin-top: 20px;
+}
+
+.section-button:hover {
+    background-color: #fca311 !important;
+}
+
+.section-button:active {
+    transform: translate(0%, 3%);
+}

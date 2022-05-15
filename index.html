@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypergram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <main>
+        <canvas id="canvas"></canvas>
+    </main>
+    <section>
+        <label id="upload-label" class="section-button" for="file-input">Upload File</label>
+        <input id="file-input" type="file" accept="image/*">
+
+        <div id="tweakers">
+            <div>
+                <label for="brightness">Brightness</label>
+                <div>
+                    <input id="brightness" class="range-tweaker" type="range"
+                           min="-255" max="255" step="1"/>
+                </div>
+            </div>
+
+            <div>
+                <label for="contrast">Contrast</label>
+                <input id="contrast" class="range-tweaker" type="range"
+                       min="-128" max="128" step="1"/>
+            </div>
+
+            <div>
+                <label for="transparent">Transparent</label>
+                <input id="transparent" class="range-tweaker" type="range"
+                       min="0" max="1" step="0.1" value="1"/>
+            </div>
+        </div>
+
+        <button id="save-button" class="section-button">SAVE IMAGE</button>
+    </section>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
